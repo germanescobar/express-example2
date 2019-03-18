@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <form action="/hello" method="get">
+    <div>
+      <label for="name">Nombre: </label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+      <textarea name="message" rows="10">Acá va el texto inicial</textarea>
+    </div>
+
+    <div>
+      <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <div>
+      <input type="checkbox" id="terms" name="terms" value="accept"> <label for="terms">Acepto los términos y condiciones</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
